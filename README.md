@@ -1,6 +1,6 @@
-# NanoXLSX4j
+# NanoXLSX4j for Java8
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/ch.rabanti/nanoxlsx4j/badge.svg)](https://maven-badges.herokuapp.com/maven-central/ch.rabanti/nanoxlsx4j) ![license](https://img.shields.io/github/license/rabanti-github/picoXlsx4j.svg)
+![license](https://img.shields.io/github/license/rabanti-github/picoXlsx4j.svg)
 
 NanoXLSX4j is a small Java library to create and read XLSX files (Microsoft Excel 2007 or newer) in an easy and native way. The library is originated form [PicoXLSX4j](https://github.com/rabanti-github/PicoXLSX4j) and has basic support of reading spreadsheets. PicoXLSX4j and thus NanoXLSX4j are direct ports of [PicoXLSX for C#](https://github.com/rabanti-github/PicoXLSX)
 
@@ -13,8 +13,7 @@ Project website: [https://picoxlsx.rabanti.ch](https://picoxlsx.rabanti.ch)
 
 ## Modules
 
-* NanoXLSX4l.Lib : Contains the actual library as basis for the Maven artefact
-* NanoXLSX4j.Demo : Contains usage examples of the library
+* src : codes
 
 See the **[Change Log](https://github.com/rabanti-github/NanoXLSX4j/blob/master/Changelog.md)** for recent updates.
 
@@ -47,34 +46,12 @@ There are some limitations:
 
 ## Requirements
 
-NanoXLSX4j was initially created with Java 8 and currently build with OpenJDK 11
-The only requirement for development is an up-to-date Java environment (OpenJDK 11 or higher recommended)
+NanoXLSX4j was initially created with Java 8.  
+The only requirement for development is an up-to-date Java environment (OpenJDK 8 or higher recommended)
 
 ## Installation
-
-### As JAR
-
-Simply place the NanoXLSX4j jar file (e.g. **nanoxlsx4j-2.1.1.jar**) into the lib folder of your project and create a library reference to it in your IDE.
-
 ### As source files
-
-Place all .java files from the NanoXLSX4j [source folder](https://github.com/rabanti-github/NanoXLSX4j/tree/master/NanoXLSX4j.Lib/src/main/java/ch/rabanti/nanoxlsx4j) into your project. The folder structure defines the packages. Please use refactoring if you want to relocate the files.
-
-### Maven
-
-Add the following information to your POM file within the ```<dependencies>``` tag:
-
-```xml
-<dependency>
-    <groupId>ch.rabanti</groupId>
-    <artifactId>nanoxlsx4j</artifactId>
-    <version>2.1.1</version>
-</dependency>
-```
-
-**Important:** The version number may change.
-Please see the version number of Maven Central [![Maven Central](https://maven-badges.herokuapp.com/maven-central/ch.rabanti/nanoxlsx4j/badge.svg)](https://maven-badges.herokuapp.com/maven-central/ch.rabanti/nanoxlsx4j)
- or check the [Change Log](https://github.com/rabanti-github/NanoXLSX4j/blob/master/Changelog.md) for the most recent version. The keywords ```LATEST```  and ```RELEASE``` are only valid in Maven 2, not 3 and newer.
+Place all .java files from the NanoXLSX4j [source folder](https://github.com/rabanti-github/NanoXLSX4j/tree/master/NanoXLSX4j.Lib/src/main/java/ch/rabanti/nanoxlsx4j) into your project. The folder structure defines the packages. Please use refactoring if you want to relocate the files.  
 
 ## Usage
 
@@ -122,9 +99,4 @@ catch (Exception ex)
 ```
 
 ## Further References
-
-See the full <b>API-Documentation</b> at: [https://rabanti-github.github.io/NanoXLSX4j/](https://rabanti-github.github.io/NanoXLSX4j/).
-The [Demo module](https://github.com/rabanti-github/NanoXLSX4j/tree/master/NanoXLSX4j.Demo) contains 14 simple use cases. You can also look at the full API documentation or the Javadoc annotations in the particular .java files.
-
-Hint: You will find most certainly any function, and the way how to use it, in the [Unit Test Section](https://github.com/rabanti-github/NanoXLSX4j/tree/master/NanoXLSX4j.Lib/src/test/java/ch/rabanti/nanoxlsx4j)
-
+There are examples in the src folder.  
